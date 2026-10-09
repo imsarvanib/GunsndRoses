@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Moments 🌸</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #fce4ec, #f3e5f5);
+  color: #765568;
+  text-align: center;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #c4779b;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 35px 20px;
+}
+
+.flower {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #c4779b;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.75);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px #eac9dc;
+  margin-top: 30px;
+}
+
+button {
+  background: #d98bb3;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #bd7099;
+  transform: scale(1.05);
+}
+
+#message {
+  margin-top: 20px;
+  color: #c4779b;
+  font-size: 17px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 13px;
+  color: #b58ba5;
+}
+</style>
+</head>
+
+<body>
+
+<nav>♡ LITTLE MOMENTS ♡</nav>
+
+<div class="container">
+  <div class="flower">🌷</div>
+
+  <h1>A Little Corner of Peace</h1>
+
+  <p>
+    A place for soft thoughts, warm feelings,
+    little joys, and beautiful days. ☁️
+  </p>
+
+  <div class="card">
+    <h2>Today's Reminder 🌸</h2>
+    <p>
+      Take a deep breath, enjoy the little things,
+      and give yourself time to grow.
+    </p>
+
+    <button onclick="showMessage()">
+      Open a Little Note 💌
+    </button>
+
+    <div id="message"></div>
+  </div>
+</div>
+
+<footer>
+  Made with ♡ and a little bit of sunshine
+</footer>
+
+<script>
+function showMessage() {
+  const notes = [
+    "You deserve all the lovely things in life 🌷",
+    "Slow days are beautiful too ☁️",
+    "Keep growing at your own pace 🌱",
+    "There is beauty in every little moment 🌸",
+    "Today is a fresh page. Make it yours 💗"
+  ];
+
+  const random = Math.floor(Math.random() * notes.length);
+  document.getElementById("message").textContent = notes[random];
+}
+</script>
+
+</body>
+</html>
